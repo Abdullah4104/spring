@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            animation-name: baka;
+            animation-duration: 4s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-fill-mode: forwards;
+            animation-timing-function: cubic-bezier(15, 7, 45, 3);
+            animation: name duration timing-function delay iteration-count direction fill-mode;
+        }
+        @keyframes baka{
+         /* from{
+            background-color: red;
+         }   
+         to{
+            background-color: blue;
+         } */
+        0%{
+            background-color: red;
+            transform: translate(0, 0) scale(1) rotate(0);
+            border-radius: 0;
+        }
+        
+        25%{
+            background-color: yellow;
+            transform: translate(300px, 0) scale(0.5) rotate(180deg);
+            border-radius: 50%;
+        }
+        50%{
+            background-color: blue;
+            transform: translate(300px, 300px) scale(2) rotate(360deg);
+            border-radius: 0;
+        }
+        75%{
+            background-color: green;
+            transform: translate(0, 300px) scale(0.5) rotate(180deg);
+            border-radius: 50%;
+        }
+        100%{
+            background-color: purple;
+            transform: translate(0, 0) scale(1) rotate(0);
+            border-radius: 0;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+.bg1{
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(121, 34, 34);
+    justify-content: center;
+    align-items: center
+}
+.bg2{
+    width: 350px;
+    height: 600px;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: none;
+    position: absolute;
+    top: 5%;
+    left: 35%;
+}
+.bg3{
+    width: 310px;
+    height: 560px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: none;
+    margin-top: 20px;
+    margin-left: 20px;
+    
+}
+/* .bg4{
+    position: absolute;
+    animation: leave-screen 500ms backwards;
+}
+@keyframes leave-screen {
+    0%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    100%{
+        transform: translateX(100vw);
+        opacity: 0;
+    }
+    
+} */
+ 

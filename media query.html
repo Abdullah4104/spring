@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+box-sizing: border-box; 
+font-family: Arial, Helvetica, sans-serif;       }
+body{
+overflow: hidden;
+}
+        nav{
+            background-color: black;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            
+            padding: 10px 20px;
+        }
+        nav div,
+         nav a{
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+
+        }
+        nav ul{
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        .dropdown,
+        .dropdown ul{
+            display: flex;
+            flex-direction: column;
+        }
+
+        nav div:nth-child(3) ul{
+            position: relative;
+            display: none;
+        }
+        .dropdown ul{
+            height: 100vh;
+            justify-content: space-around;
+            align-items: center;
+            position: absolute;
+            background-color: black;
+            padding: 10px 20px;
+            right: -20px;
+            transform: translateX(300px);
+            transition: transform 0.5s ease;
+        }
+        .dropdown:focus-within{
+transform: translateX(0px);
+        }
+        main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        main div{
+            width: 50%;
+        }
+        div img{
+            width: 100%;
+        }
+        section{
+background-color: black;
+padding: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+        }
+        /* section div{
+            width: 200px;
+            height: 200px;
+        }
+
+        div:first-child{
+            background-color: yellow;
+        }
+        div:nth-child(2){
+            background-color: green;
+        }
+        div:nth-child(3){
+            background-color: blue;
+        }
+        div:nth-child(4){
+            background-color: orange;
+        }
+        div:nth-child(5){
+            background-color: purple;
+        }
+        div:nth-child(6){
+            background-color: red;
+        } */
+        @media screen and (max-width: 900px) {
+            main{
+                display: flex;
+                flex-direction: column-reverse;
+                background-color: black;
+
+            }
+            main p{
+                color: white;
+            }
+            main div{
+                width: 100%;
+            }
+        }
+            @media screen and (max-width: 650px) {
+               main{
+                display: flex;
+                flex-direction: column;
+               } 
+               nav div:nth-child(2){
+               display: none;
+               }
+               .menu{
+                display: block;
+               }
+            }
+            @media screen and (max-width: 400px){
+                div img{
+                    display: none;
+                }
+            }
+            @media only screen and (max-width: 575.98px){
+
+            }
+        @media only screen and (min-width: 576px) and (max-width: 767.98px){
+
+        }
+        @media only screen and (min-width: 768px) and (max-width: 991.98px){
+
+        }
+        @media only screen and (min-width: 992px) and (max-width: 1199.98px){
+
+        }
+        @media only screen and (min-width: 1200px){
+        }
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <div>logo</div>
+        <div>
+            <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Signup</a></li>
+            <li><a href="#">Login</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul class="dropdown">
+                <li class="menu"><a href="#">Menu</a>
+                <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Signup</a></li>
+            <li><a href="#">Login</a></li>
+                </ul>
+            </li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui assumenda, tenetur error maxime maiores nulla. Accusantium, quasi sint veritatis et voluptas dicta aut ratione eos eum vitae perferendis, laboriosam cumque.
+        Pariatur vero nihil aperiam possimus placeat, laboriosam ipsum saepe, illum enim iste optio dicta. Voluptate sed non, nihil excepturi molestias impedit fugiat atque tempora expedita? Ipsa veritatis neque quas unde!
+        Quasi fuga minima eum cupiditate labore impedit vel voluptatem, dignissimos consequuntur exercitationem, nulla qui, aperiam quaerat ipsa sed nisi. Velit molestias hic quas ducimus facilis veniam error, dolorem alias itaque!
+        Asperiores labore sapiente placeat nam optio fugiat pariatur unde quas. Ipsam quam in ab soluta adipisci quibusdam ut, temporibus iste reprehenderit nihil odio unde obcaecati corrupti eligendi incidunt nulla autem!
+        Laboriosam autem aliquam ipsa cumque maiores consequuntur fugit sunt aperiam molestias velit! Rerum corporis aliquam eaque explicabo aliquid quo sequi atque dolore et. Impedit libero tenetur porro in ut ipsum.
+        Non esse eum mollitia corrupti perspiciatis hic tenetur quia cumque, libero, nostrum debitis ipsa minus. Atque perspiciatis modi amet consectetur, sunt dolore, temporibus ducimus repudiandae autem adipisci tempora? Ea, expedita?
+        At impedit eligendi tempora pariatur quibusdam itaque fuga quas quia, consequatur quos error autem nam minima reiciendis. Repellat velit suscipit provident aspernatur consectetur laboriosam qui dolorum dolore magnam. Atque, repellat?
+        Sapiente, illum ad delectus eveniet provident expedita ea doloremque. In corrupti laborum cum ut, a iure magnam similique quasi minus eaque incidunt nihil animi ipsam modi molestiae quibusdam voluptatibus recusandae!
+        Dolores neque, tempora magnam magni fuga architecto blanditiis sit, assumenda aut ullam consequuntur asperiores eius eum labore fugiat corporis doloribus unde optio omnis odio reprehenderit quisquam vitae. Ullam, impedit obcaecati.
+        Eos excepturi voluptatibus dolore eveniet corporis cumque eaque quia laborum fugit ex dicta error sit quos cum autem consectetur voluptas expedita itaque atque reprehenderit, praesentium in beatae harum doloremque? Vitae.</p>
+        <img src="../../Pictures/vlcsnap-error826.png" alt="">
+    </main>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</body>
+</html>
